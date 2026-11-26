@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Hasan Bahadır KOCA — TA7HBK">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#07060d"/>
+      <stop offset="0.62" stop-color="#0d0b1c"/>
+      <stop offset="1" stop-color="#061722"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.35" r="0.45">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .mono{font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      .sans{font-family:'Space Grotesk','Inter',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+      .wave{animation:drift 9s linear infinite}
+      .wave2{animation:drift 13s linear infinite reverse}
+      @keyframes drift{from{transform:translateX(0)}to{transform:translateX(-200px)}}
+      .ring{fill:none;stroke:#22d3ee;stroke-width:1.5;transform-origin:1010px 118px;animation:pulse 3.2s ease-out infinite}
+      .ring.b{animation-delay:1.06s}.ring.c{animation-delay:2.13s}
+      @keyframes pulse{0%{transform:scale(.2);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+      .blink{animation:blink 1.1s steps(1) infinite}
+      @keyframes blink{50%{opacity:0}}
+      @media (prefers-reduced-motion:reduce){.wave,.wave2,.ring,.blink{animation:none}}
+    </style>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="340" fill="url(#glow)"/>
+
+  <!-- stars -->
+  <g fill="#ECEAF6" opacity=".55">
+    <circle cx="640" cy="40" r="1"/><circle cx="720" cy="88" r="1.2"/><circle cx="860" cy="30" r=".9"/>
+    <circle cx="1150" cy="60" r="1.1"/><circle cx="1100" cy="200" r=".8"/><circle cx="780" cy="160" r=".8"/>
+    <circle cx="930" cy="210" r="1"/><circle cx="560" cy="120" r=".8"/><circle cx="1180" cy="140" r=".9"/>
+  </g>
+
+  <!-- radio mast with pulsing signal -->
+  <g stroke="#9a95b8" stroke-width="2" fill="none" opacity=".9">
+    <path d="M1010 118 L992 262 M1010 118 L1028 262 M997 222 L1023 222 M1001 186 L1019 186 M1005 150 L1015 150"/>
+  </g>
+  <circle cx="1010" cy="118" r="4" fill="#22d3ee"/>
+  <circle class="ring" cx="1010" cy="118" r="40"/>
+  <circle class="ring b" cx="1010" cy="118" r="40"/>
+  <circle class="ring c" cx="1010" cy="118" r="40"/>
+
+  <!-- ultralight -->
+  <g transform="translate(800 70) rotate(-6)" fill="none" stroke="#ECEAF6" stroke-width="2" stroke-linecap="round" opacity=".8">
+    <path d="M0 0 Q45 -14 90 0"/><path d="M45 -6 L45 16 M30 16 L62 16 M45 16 L74 26"/>
+  </g>
+
+  <!-- sea -->
+  <g class="wave" opacity=".55">
+    <path d="M0 296 Q50 284 100 296 T200 296 T300 296 T400 296 T500 296 T600 296 T700 296 T800 296 T900 296 T1000 296 T1100 296 T1200 296 T1300 296 T1400 296 V340 H0Z" fill="#0e7490"/>
+  </g>
+  <g class="wave2" opacity=".75">
+    <path d="M0 312 Q50 302 100 312 T200 312 T300 312 T400 312 T500 312 T600 312 T700 312 T800 312 T900 312 T1000 312 T1100 312 T1200 312 T1300 312 T1400 312 V340 H0Z" fill="#083344"/>
+  </g>
+
+  <!-- text -->
+  <text x="64" y="72" class="mono" font-size="15" fill="#22d3ee" letter-spacing="2">// TA7HBK · 145.500 MHz</text>
+  <text x="64" y="130" class="sans" font-size="52" font-weight="700" fill="#ECEAF6">Hasan Bahadır <tspan fill="url(#accent)">KOCA</tspan></text>
+  <text x="64" y="168" class="sans" font-size="20" fill="#ECEAF6" opacity=".88">Bilgisayar Mühendisi · Pilot · Dalgıç · Radyo Amatörü</text>
+  <text x="64" y="194" class="sans" font-size="16" fill="#9a95b8">Computer Engineer · Pilot · Scuba Diver · Ham Radio Operator</text>
+  <rect x="64" y="212" width="120" height="3" rx="1.5" fill="url(#accent)"/>
+  <text x="64" y="244" class="mono" font-size="16" fill="#ECEAF6">&gt; Zoru başarırız, imkansız zaman alır.<tspan class="blink" fill="#22d3ee">▌</tspan></text>
+  <text x="82" y="268" class="mono" font-size="13" fill="#9a95b8">The difficult we do at once; the impossible takes a little longer.</text>
+</svg>
